@@ -20,7 +20,7 @@ RUN apk add build-base &&\
     make build-app && \
     make build-dashboard
 
-FROM alpine:3.18
+FROM alpine:3.21.0
 RUN adduser -D -h /authorizer -u 1000 -k /dev/null authorizer
 WORKDIR /authorizer
 RUN mkdir app dashboard
